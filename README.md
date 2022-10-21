@@ -2,9 +2,13 @@
 
 # Live Activity Example
 
-Example how to make, update and end Live Activity. With Dynamic Island and Lock Screen.
+Example how to make, update and end Live Activity. With Dynamic Island and Lock Screen.<br>
+**Full tutorial available at [sparrowcode.io](https://sparrowcode.io/tutorials/live-activities)**.
 
-> Live Activity already enabled for upload with Xcode 14.1 RC. Supported only for iOS >=16.1
+Live Activity already enabled for upload with Xcode 14.1 RC.
+
+> **Note**
+> Supported only for iOS >=16.1
 
 ## Preparing Project
 
@@ -21,7 +25,7 @@ Or skip it if already supporting widgets. Next add to `Info.plist` key `Supports
 
 ## Define Model
 
-Define model-data:
+Define model-data. There is dynamic and static properties. Dynamic can be updated in time and make changes in UI. Static using only for launch Live Activity.
 
 ```swift
 struct ActivityAttribute: ActivityAttributes {
