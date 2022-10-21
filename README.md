@@ -1,14 +1,16 @@
-# Live Activity Example
+![](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
 
-![Live Actvitiy Example Prject](https://cdn.sparrowcode.io/tutorials/live-activities/header-with-corner.png)
+# Live Activity Example
 
 Example how to make, update and end Live Activity. With Dynamic Island and Lock Screen.
 
-## Preparing
+> Live Activity already enabled for upload with Xcode 14.1 RC. Supported only for iOS >=16.1
+
+## Preparing Project
 
 Add Widget target:
 
-![New Widget Target](https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png)
+<img src="https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png" width="500">
 
 Or skip it if already supporting widgets. Next add to `Info.plist` key `Supports Live Activities` to true:
 
@@ -17,7 +19,7 @@ Or skip it if already supporting widgets. Next add to `Info.plist` key `Supports
 <true/>
 ```
 
-## Model
+## Define Model
 
 Define model-data:
 
@@ -45,7 +47,7 @@ struct ActivityAttribute: ActivityAttributes {
 }
 ```
 
-## UI
+## Add UI
 
 Define `Widget` wrapper:
 
